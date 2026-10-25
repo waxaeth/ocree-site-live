@@ -1,0 +1,140 @@
+const fr = {
+"Platform":"Plateforme","Resources":"Ressources","About":"À propos","Sign in":"Connexion","Primary navigation":"Navigation principale","Ocree home":"Accueil Ocree","Open menu":"Ouvrir le menu","Close menu":"Fermer le menu",
+"Asset owner":"Propriétaire","OARDS review":"Examen OARDS","Digital security":"Titre numérique","Registered dealer":"Courtier inscrit","Eligible investor":"Investisseur admissible",
+"Ocree | Private Market Infrastructure":"Ocree | Infrastructure des marchés privés","Private markets, connected":"Marchés privés, connectés","The infrastructure behind modern private markets":"L’infrastructure des marchés privés modernes","The infrastructure behind modern private markets.":"L’infrastructure des marchés privés modernes.",
+"Access to private assets, with standardized diligence from the start. Beginning with commercial real estate.":"Accédez aux actifs privés grâce à une diligence normalisée dès le départ. À commencer par l’immobilier commercial.","I own commercial property":"Je possède un immeuble commercial","I advise clients":"Je conseille des clients","Who can invest":"Qui peut investir",
+"Canadian commercial real estate investment in 2025.":"Investissements canadiens en immobilier commercial en 2025.","Projected Canadian commercial real estate investment volume for 2026.":"Volume projeté des investissements canadiens en immobilier commercial pour 2026.","Built for commercial real estate":"Conçu pour l’immobilier commercial","One connected process":"Un processus connecté",
+"Whether you hold existing property, new builds or debt, Ocree prepares your asset for distribution through regulated investment dealers and exempt market dealers across Canada.":"Qu’il s’agisse d’un immeuble existant, d’un nouveau projet ou d’une dette, Ocree prépare votre actif à être distribué par des courtiers en valeurs mobilières et des courtiers sur le marché dispensé inscrits partout au Canada.",
+"Consistent disclosure":"Information uniforme","Every CRE offering is reviewed through OARDS before it reaches a dealer.":"Chaque placement immobilier commercial est examiné au moyen d’OARDS avant d’être présenté à un courtier.","Broader access":"Accès élargi","Ocree brings reviewed properties to registered dealers, so more eligible investors can consider them.":"Ocree présente des propriétés examinées aux courtiers inscrits afin qu’un plus grand nombre d’investisseurs admissibles puissent les considérer.",
+"One standard of review":"Une norme d’examen","Every property goes through OARDS, the Ocree Asset Rating & Disclosure System.":"Chaque propriété passe par OARDS, le système d’évaluation et d’information sur les actifs d’Ocree.","Digital securities":"Titres numériques","Ownership is recorded on a blockchain-based registry while users follow familiar processes.":"La propriété est inscrite dans un registre fondé sur la chaîne de blocs, tandis que les utilisateurs suivent des processus familiers.",
+"Connected distribution":"Distribution connectée","Asset owners get a regulated path to raise capital through registered dealers.":"Les propriétaires d’actifs disposent d’une voie réglementée pour mobiliser des capitaux par l’entremise de courtiers inscrits.","Ongoing reporting":"Information continue","A consistent digital record gives each party a clearer view throughout an offering.":"Un registre numérique uniforme donne à chaque partie une vue plus claire tout au long du placement.",
+"How it works":"Fonctionnement","From property to investors":"De la propriété aux investisseurs","We onboard the asset, review it through OARDS, structure the offering with legal counsel, then distribute it through registered dealers.":"Nous intégrons l’actif, l’examinons au moyen d’OARDS, structurons le placement avec des conseillers juridiques, puis le distribuons par l’entremise de courtiers inscrits.","Onboard":"Intégrer","The property, ownership structure and raise are defined.":"La propriété, la structure de détention et la levée de capitaux sont définies.","Review":"Examiner","OARDS creates consistent diligence and disclosure.":"OARDS assure une diligence et une information uniformes.","Structure":"Structurer","Legal counsel and Ocree prepare the digital security.":"Les conseillers juridiques et Ocree préparent le titre numérique.","Distribute":"Distribuer","Registered dealers bring the offering to eligible investors.":"Les courtiers inscrits présentent le placement aux investisseurs admissibles.","See how it works":"Voir le fonctionnement",
+"The network":"Le réseau","Infrastructure, not another intermediary":"Une infrastructure, pas un intermédiaire de plus","Ocree connects the parties already in the market through one regulated, repeatable process.":"Ocree relie les parties déjà présentes sur le marché au moyen d’un processus réglementé et reproductible.","platform":"plateforme","Asset owners":"Propriétaires d’actifs","Legal & data partners":"Partenaires juridiques et de données","Registered dealers":"Courtiers inscrits","Eligible investors":"Investisseurs admissibles",
+"Past offerings":"Placements antérieurs","Commercial real estate in practice":"L’immobilier commercial en pratique","Selected completed offerings presented for context. Past offerings are not indicative of future availability or results.":"Sélection de placements réalisés présentée à titre informatif. Les placements antérieurs ne garantissent ni la disponibilité ni les résultats futurs.","Multi-residential. A Class A rental community with geothermal heating and EV charging.":"Immeuble multirésidentiel. Une communauté locative de catégorie A dotée du chauffage géothermique et de bornes de recharge pour véhicules électriques.","Closed":"Clôturé","Multi-residential development in Uptown Waterloo by Momentum Developments.":"Projet multirésidentiel dans le quartier Uptown Waterloo par Momentum Developments.",
+"Built in Canada":"Conçu au Canada","Ocree Capital is a Canadian exempt market dealer built for private commercial real estate.":"Ocree Capital est un courtier canadien sur le marché dispensé conçu pour l’immobilier commercial privé.","Meet Ocree":"Découvrir Ocree","Compliance first":"La conformité d’abord","Investor protection shapes every step":"La protection des investisseurs guide chaque étape","From asset review to distribution, the process is designed around transparent disclosure and regulatory oversight.":"De l’examen de l’actif à sa distribution, le processus repose sur une information transparente et une surveillance réglementaire.","Talk to the team":"Parler à l’équipe",
+"How Ocree Works | Digital Securities and Real Estate":"Fonctionnement d’Ocree | Titres numériques et immobilier","A connected path from asset to investor":"Une voie connectée de l’actif à l’investisseur","The ecosystem map, the operating process and the technology behind private real estate distribution.":"L’écosystème, le processus opérationnel et la technologie qui soutiennent la distribution d’immobilier privé.","The ecosystem":"L’écosystème","One system. Familiar roles.":"Un seul système. Des rôles familiers.","Ocree does not replace the issuer, legal counsel, dealer or advisor. It gives each party a consistent operating layer for diligence, issuance, distribution and reporting.":"Ocree ne remplace ni l’émetteur, ni le conseiller juridique, ni le courtier, ni le conseiller. La plateforme offre à chaque partie une couche opérationnelle uniforme pour la diligence, l’émission, la distribution et l’information.","Commercial property":"Immobilier commercial","OARDS + legal":"OARDS + juridique","Dealer network":"Réseau de courtiers",
+"Seven steps":"Sept étapes","How a property reaches investors":"Comment une propriété rejoint les investisseurs","Each offering follows the same structured path, with responsibilities clear at every stage.":"Chaque placement suit le même parcours structuré, avec des responsabilités claires à chaque étape.","Qualify":"Qualifier","Initial asset and issuer fit.":"Adéquation initiale de l’actif et de l’émetteur.","Documents, ownership and raise.":"Documents, structure de détention et levée de capitaux.","Rating and disclosure review.":"Évaluation et examen de l’information.","Legal and security design.":"Structure juridique et conception du titre.","Issue":"Émettre","Digital security and registry.":"Titre numérique et registre.","Dealer-led investor access.":"Accès aux investisseurs dirigé par les courtiers.","Report":"Rendre compte","Ongoing records and updates.":"Registres et mises à jour continus.",
+"Technology in the background":"La technologie en arrière-plan","Each offering is issued as a digital security, with ownership recorded on a blockchain-based registry.":"Chaque placement est émis sous forme de titre numérique, dont la propriété est inscrite dans un registre fondé sur la chaîne de blocs.","Issuers, dealers and investors follow familiar regulated processes.":"Les émetteurs, les courtiers et les investisseurs suivent des processus réglementés familiers.","A shared registry supports clear ownership records and reporting.":"Un registre partagé favorise des dossiers de propriété et une information clairs.","Technology is used where it makes the process clearer or faster.":"La technologie est utilisée lorsqu’elle rend le processus plus clair ou plus rapide.","One standard of review gives every dealer the same structured disclosure for every asset.":"Une seule norme d’examen fournit à chaque courtier la même information structurée pour chaque actif.","Submit a property":"Soumettre une propriété","Explore resources":"Explorer les ressources",
+"Built for every side of the private market":"Conçu pour chaque acteur du marché privé","A consistent operating layer for owners, dealers, advisors, eligible investors and industry partners.":"Une couche opérationnelle uniforme pour les propriétaires, courtiers, conseillers, investisseurs admissibles et partenaires du secteur.","A regulated path to raise capital":"Une voie réglementée pour mobiliser des capitaux","Ocree prepares commercial real estate assets for distribution through registered investment dealers and exempt market dealers across Canada.":"Ocree prépare les actifs immobiliers commerciaux à être distribués par des courtiers en valeurs mobilières et des courtiers sur le marché dispensé inscrits partout au Canada.","Prepare":"Préparer","Define the asset, ownership structure and financing objective.":"Définir l’actif, la structure de détention et l’objectif de financement.","Build consistent disclosure through OARDS.":"Produire une information uniforme au moyen d’OARDS.","Reach eligible investors through registered dealers.":"Joindre les investisseurs admissibles par l’entremise de courtiers inscrits.",
+"Dealers & advisors":"Courtiers et conseillers","Better inputs for KYP":"De meilleures données pour la connaissance du produit","OARDS gives representatives a consistent view of each property. The client relationship stays with the dealer, supported by familiar connectivity and structured materials.":"OARDS donne aux représentants une vue uniforme de chaque propriété. La relation client demeure avec le courtier, soutenue par une connectivité familière et des documents structurés.","Reviewed properties with consistent disclosure.":"Des propriétés examinées avec une information uniforme.","Clear roles for dealer due diligence and client suitability.":"Des rôles clairs pour la diligence du courtier et la convenance au client.","Guides and supporting materials for representatives.":"Des guides et des documents de soutien pour les représentants.","Partner with us":"Devenir partenaire",
+"Private real estate, through a registered dealer":"L’immobilier privé, par l’entremise d’un courtier inscrit","Most private offerings in Canada are available to accredited investors under National Instrument 45-106. Investors may access eligible offerings through their own dealer or through Ocree Capital.":"Au Canada, la plupart des placements privés sont offerts aux investisseurs qualifiés en vertu du Règlement 45-106. Les investisseurs peuvent accéder aux placements admissibles par leur propre courtier ou par Ocree Capital.","Eligibility depends on the exemption used for an offering and the investor's circumstances.":"L’admissibilité dépend de la dispense utilisée pour le placement et de la situation de l’investisseur.","How to invest":"Comment investir","Speak with your existing dealer or connect with Ocree Capital.":"Parlez à votre courtier actuel ou communiquez avec Ocree Capital.","Understand risk":"Comprendre le risque","Private real estate is illiquid and can lose value. Review the offering documents carefully.":"L’immobilier privé est peu liquide et peut perdre de la valeur. Examinez attentivement les documents de placement.","Industry partners":"Partenaires du secteur","Connected to the market around the asset":"Connecté au marché qui entoure l’actif","Law firms and structuring counsel.":"Cabinets d’avocats et conseillers en structuration.","Data, registry, custody and exchange providers.":"Fournisseurs de données, de registres, de garde et d’échange.","Regulators and compliance specialists.":"Organismes de réglementation et spécialistes de la conformité.",
+"About Ocree | Real Estate, Regulation and Technology":"À propos d’Ocree | Immobilier, réglementation et technologie","About Ocree":"À propos d’Ocree","Real estate knowledge. Regulatory discipline. Technology that earns its place.":"Connaissance de l’immobilier. Rigueur réglementaire. Une technologie qui mérite sa place.","Our story":"Notre histoire","Built from experience in the market":"Bâti sur l’expérience du marché","Ocree's founders spent more than two decades running brokerages and closing commercial real estate transactions.":"Les fondateurs d’Ocree ont consacré plus de deux décennies à diriger des maisons de courtage et à conclure des opérations immobilières commerciales.","They saw how much of private real estate still depended on phone calls, spreadsheets and personal introductions. Ocree started in Canada, working with regulators from the beginning. Commercial real estate is our first asset class.":"Ils ont constaté à quel point l’immobilier privé dépendait encore des appels téléphoniques, des feuilles de calcul et des présentations personnelles. Ocree a vu le jour au Canada en collaborant dès le départ avec les organismes de réglementation. L’immobilier commercial est notre première catégorie d’actifs.",
+"Make private assets easier to distribute well":"Faciliter la distribution rigoureuse des actifs privés","Ocree provides the infrastructure that lets private assets reach investors through a consistent, regulated process. We start with commercial real estate, combining OARDS review, digital securities and distribution through registered dealers.":"Ocree fournit l’infrastructure qui permet aux actifs privés de rejoindre les investisseurs au moyen d’un processus uniforme et réglementé. Nous commençons par l’immobilier commercial, en combinant l’examen OARDS, les titres numériques et la distribution par des courtiers inscrits.","Private markets that connect as efficiently as public markets":"Des marchés privés aussi efficaces et connectés que les marchés publics","With the same standard of disclosure. Built in Canada, designed to extend to private credit, private funds and other asset classes.":"Avec une même norme d’information. Conçu au Canada pour s’étendre au crédit privé, aux fonds privés et à d’autres catégories d’actifs.",
+"How we build":"Notre approche","Three disciplines, one platform":"Trois disciplines, une plateforme","Ocree combines product knowledge, regulatory understanding and practical technology instead of treating them as separate workstreams.":"Ocree réunit la connaissance des produits, la compréhension de la réglementation et une technologie pratique plutôt que de les traiter séparément.","Technology":"Technologie","Digital issuance, registry and reporting that make each transaction faster to complete.":"Une émission numérique, un registre et une information qui accélèrent chaque opération.","Product knowledge":"Connaissance des produits","We understand what owners need to raise capital and what dealers need to offer it.":"Nous comprenons ce dont les propriétaires ont besoin pour mobiliser des capitaux et ce dont les courtiers ont besoin pour les offrir.","Every step is designed with regulatory oversight in mind.":"Chaque étape est conçue en tenant compte de la surveillance réglementaire.","Core values":"Valeurs fondamentales","Transparency, security and compliance. Technology only where it makes the process clearer or faster.":"Transparence, sécurité et conformité. La technologie seulement lorsqu’elle rend le processus plus clair ou plus rapide.","Meet the team":"Rencontrer l’équipe",
+"Clearer private markets start with better information":"Des marchés privés plus clairs commencent par une meilleure information","Insights, market notes, guides and event takeaways for owners, dealers, advisors and investors.":"Analyses, notes de marché, guides et points saillants d’événements pour les propriétaires, courtiers, conseillers et investisseurs.","Insights":"Analyses","Why private markets need modern infrastructure":"Pourquoi les marchés privés ont besoin d’une infrastructure moderne","A practical look at the operating gaps between asset owners, dealers and investors.":"Un regard pratique sur les écarts opérationnels entre propriétaires d’actifs, courtiers et investisseurs.","Read insight":"Lire l’analyse","Know your product":"Connaissance du produit","KYP for private real estate":"Connaissance du produit en immobilier privé","How structured product diligence supports dealer review and representative understanding.":"Comment une diligence structurée sur les produits soutient l’examen du courtier et la compréhension du représentant.","Read guide":"Lire le guide","Learn":"Apprendre","Reading a CRE offering memorandum":"Lire une notice d’offre immobilière commerciale","The sections, risks and disclosures to look for before considering a private offering.":"Les sections, risques et informations à examiner avant d’envisager un placement privé.","Open guide":"Ouvrir le guide",
+"Glossary":"Glossaire","Private market terms, in plain language":"Les termes des marchés privés, en langage clair","Accredited investor, digital security, KYP, offering memorandum, OARDS and SPV.":"Investisseur qualifié, titre numérique, connaissance du produit, notice d’offre, OARDS et véhicule ad hoc.","Explore glossary":"Explorer le glossaire","Market notes":"Notes de marché","Short views on market developments":"Points de vue concis sur l’évolution du marché","Timely summaries of policy, commercial real estate and private market infrastructure news.":"Résumés actuels des nouvelles sur les politiques, l’immobilier commercial et l’infrastructure des marchés privés.","View notes":"Voir les notes","Events":"Événements","Clips, transcripts and takeaways on technology, product knowledge and compliance.":"Extraits, transcriptions et points à retenir sur la technologie, la connaissance des produits et la conformité.","Watch event":"Voir l’événement",
+"Accredited investors":"Investisseurs qualifiés","Understand the definition":"Comprendre la définition","Most private offerings in Canada are available to accredited investors under National Instrument 45-106.":"Au Canada, la plupart des placements privés sont offerts aux investisseurs qualifiés en vertu du Règlement 45-106.","If you are not sure whether you qualify, speak with your dealer or with Ocree Capital.":"Si vous ne savez pas si vous êtes admissible, parlez à votre courtier ou à Ocree Capital.","Read the Canadian definition":"Lire la définition canadienne","Company news":"Nouvelles de l’entreprise","Announcements from Ocree Corporation and Ocree Capital Inc.":"Annonces d’Ocree Corporation et d’Ocree Capital Inc.","View news":"Voir les nouvelles",
+"Contact Ocree":"Contacter Ocree","Tell us whether you own property, advise clients or want to partner. The right person will follow up.":"Dites-nous si vous possédez une propriété, conseillez des clients ou souhaitez devenir partenaire. La bonne personne communiquera avec vous.","Before you send":"Avant d’envoyer","Start with the role you play":"Commencez par votre rôle","Prefer to invest through your own dealer or advisor? Ocree works with third-party dealers, so brokers and advisors can offer reviewed properties to their clients.":"Vous préférez investir par l’entremise de votre propre courtier ou conseiller? Ocree travaille avec des courtiers tiers afin qu’ils puissent offrir à leurs clients des propriétés examinées.","Investment questions go to Ocree Capital Inc. Submitting this form does not open an account.":"Les questions de placement sont transmises à Ocree Capital Inc. L’envoi de ce formulaire n’ouvre pas de compte.","First name":"Prénom","Last name":"Nom","Email":"Courriel","Phone":"Téléphone","I am":"Je suis","Choose one":"Choisir","Asset owner":"Propriétaire d’actif","Dealer or advisor":"Courtier ou conseiller","Investor":"Investisseur","Industry partner":"Partenaire du secteur","Province":"Province","How can we help?":"Comment pouvons-nous vous aider?","Send":"Envoyer",
+"Company":"Entreprise","News":"Nouvelles","Relationship Disclosure":"Information sur la relation","Accredited Investor":"Investisseur qualifié","Onboarding Documents":"Documents d’intégration","Complaints Process":"Processus de traitement des plaintes","© 2026 Ocree. All rights reserved.":"© 2026 Ocree. Tous droits réservés.","Media":"Médias","Terms of Use":"Conditions d’utilisation","Privacy Policy":"Politique de confidentialité","Cookie Policy":"Politique relative aux témoins",
+"Ocree Capital Inc., Ocree Properties Inc. and Ocree Services Inc. are wholly owned subsidiaries of Ocree Corporation. Ocree Capital is a registered exempt market dealer in all provinces and territories of Canada, except Quebec. Ocree Capital is not a member of CIRO or the CIPF. This website is for information purposes only and is not investment, tax or financial advice.":"Ocree Capital Inc., Ocree Properties Inc. et Ocree Services Inc. sont des filiales en propriété exclusive d’Ocree Corporation. Ocree Capital est un courtier sur le marché dispensé inscrit dans toutes les provinces et tous les territoires du Canada, sauf au Québec. Ocree Capital n’est pas membre de l’OCRI ni du FCPI. Ce site Web est fourni à titre informatif seulement et ne constitue pas un conseil en placement, fiscal ou financier."
+};
+
+let currentLanguage = 'en';
+const textNodes = [];
+const attributes = [];
+const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+  acceptNode(node) {
+    if (!node.nodeValue.trim() || node.parentElement?.closest('script,style,.language-switcher')) return NodeFilter.FILTER_REJECT;
+    return NodeFilter.FILTER_ACCEPT;
+  }
+});
+while (walker.nextNode()) {
+  const node = walker.currentNode;
+  node.__ocreeEnglish = node.nodeValue;
+  textNodes.push(node);
+}
+document.querySelectorAll('[aria-label],[title],[data-label],[placeholder]').forEach((element) => {
+  ['aria-label','title','data-label','placeholder'].forEach((name) => {
+    if (element.hasAttribute(name)) attributes.push({ element, name, value: element.getAttribute(name) });
+  });
+});
+const englishTitle = document.title;
+const description = document.querySelector('meta[name="description"]');
+const englishDescription = description?.content || '';
+const translate = (value, language) => language === 'fr' ? fr[value] || value : value;
+
+function flag(language) {
+  const element = document.createElement('span');
+  element.className = `language-flag flag-${language}`;
+  element.setAttribute('aria-hidden', 'true');
+  element.append(document.createElement('i'));
+  return element;
+}
+
+const switcher = document.createElement('div');
+switcher.className = 'language-switcher';
+const trigger = document.createElement('button');
+trigger.className = 'language-trigger';
+trigger.type = 'button';
+trigger.setAttribute('aria-haspopup', 'menu');
+trigger.setAttribute('aria-expanded', 'false');
+const activeFlag = flag('en');
+const activeCode = document.createElement('span');
+activeCode.className = 'language-code';
+activeCode.textContent = 'EN';
+const chevron = document.createElement('span');
+chevron.className = 'language-chevron';
+chevron.setAttribute('aria-hidden', 'true');
+trigger.append(activeFlag, activeCode, chevron);
+
+const menu = document.createElement('div');
+menu.className = 'language-menu';
+menu.setAttribute('role', 'menu');
+menu.hidden = true;
+[{ code:'en', label:'English' },{ code:'fr', label:'Français' }].forEach(({ code, label }) => {
+  const option = document.createElement('button');
+  option.type = 'button';
+  option.dataset.language = code;
+  option.setAttribute('role', 'menuitemradio');
+  option.append(flag(code), document.createTextNode(label));
+  option.addEventListener('click', () => applyLanguage(code));
+  menu.append(option);
+});
+switcher.append(trigger, menu);
+const navActions = document.querySelector('.nav-actions');
+navActions?.insertBefore(switcher, navActions.firstChild);
+
+function setMenu(open) {
+  menu.hidden = !open;
+  trigger.setAttribute('aria-expanded', String(open));
+  switcher.classList.toggle('open', open);
+}
+
+function applyLanguage(language) {
+  currentLanguage = language === 'fr' ? 'fr' : 'en';
+  window.ocreeLanguage = currentLanguage;
+  document.documentElement.lang = currentLanguage;
+  textNodes.forEach((node) => {
+    const original = node.__ocreeEnglish;
+    const match = original.match(/^(\s*)(.*?)(\s*)$/s);
+    if (match) node.nodeValue = match[1] + translate(match[2], currentLanguage) + match[3];
+  });
+  attributes.forEach(({ element, name, value }) => element.setAttribute(name, translate(value, currentLanguage)));
+  document.title = translate(englishTitle, currentLanguage);
+  if (description) description.content = translate(englishDescription, currentLanguage);
+  activeFlag.className = `language-flag flag-${currentLanguage}`;
+  activeCode.textContent = currentLanguage.toUpperCase();
+  trigger.setAttribute('aria-label', currentLanguage === 'fr' ? 'Choisir la langue' : 'Choose language');
+  menu.querySelectorAll('[data-language]').forEach((option) => {
+    const active = option.dataset.language === currentLanguage;
+    option.setAttribute('aria-checked', String(active));
+    option.classList.toggle('active', active);
+  });
+  try { localStorage.setItem('ocree-language', currentLanguage); } catch {}
+  setMenu(false);
+}
+
+trigger.addEventListener('click', () => setMenu(menu.hidden));
+document.addEventListener('click', (event) => { if (!switcher.contains(event.target)) setMenu(false); });
+document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && !menu.hidden) { setMenu(false); trigger.focus(); } });
+document.querySelector('.menu-toggle')?.addEventListener('click', (event) => {
+  const open = event.currentTarget.getAttribute('aria-expanded') === 'true';
+  event.currentTarget.setAttribute('aria-label', translate(open ? 'Close menu' : 'Open menu', currentLanguage));
+});
+document.querySelector('[data-contact-form]')?.addEventListener('submit', () => {
+  if (currentLanguage === 'fr') document.querySelector('.form-status').textContent = 'Merci. Ce prototype local n’envoie pas encore les formulaires.';
+});
+
+let savedLanguage = 'en';
+try { savedLanguage = localStorage.getItem('ocree-language') || 'en'; } catch {}
+applyLanguage(savedLanguage);
