@@ -29,6 +29,68 @@ const fr = {
 "Ocree Capital Inc., Ocree Properties Inc. and Ocree Services Inc. are wholly owned subsidiaries of Ocree Corporation. Ocree Capital is a registered exempt market dealer in all provinces and territories of Canada, except Quebec. Ocree Capital is not a member of CIRO or the CIPF. This website is for information purposes only and is not investment, tax or financial advice.":"Ocree Capital Inc., Ocree Properties Inc. et Ocree Services Inc. sont des filiales en propriété exclusive d’Ocree Corporation. Ocree Capital est un courtier sur le marché dispensé inscrit dans toutes les provinces et tous les territoires du Canada, sauf au Québec. Ocree Capital n’est pas membre de l’OCRI ni du FCPI. Ce site Web est fourni à titre informatif seulement et ne constitue pas un conseil en placement, fiscal ou financier."
 };
 
+Object.assign(fr, {
+  "I want to invest":"Je veux investir",
+  "Canadian commercial real estate investment in 2025.":"Investissement dans l'immobilier commercial canadien en 2025.",
+  "Projected Canadian commercial real estate investment in 2026, including M&A and portfolio deals.":"Investissement projeté dans l'immobilier commercial canadien en 2026, y compris les fusions-acquisitions et les opérations de portefeuille.",
+  "Starting with commercial real estate":"En commençant par l'immobilier commercial",
+  "Clear roles":"Des rôles clairs",
+  "Dealers keep the client relationship and make every suitability decision.":"Les courtiers conservent la relation client et prennent chaque décision relative à la convenance.",
+  "Reviewed properties reach registered dealers, so more eligible investors can consider them.":"Les propriétés examinées sont présentées à des courtiers inscrits afin qu'un plus grand nombre d'investisseurs admissibles puissent les considérer.",
+  "OARDS, the Ocree Asset Rating & Disclosure System, gives dealers the same structured disclosure for every asset.":"OARDS, le système d'évaluation et d'information sur les actifs d'Ocree, fournit aux courtiers la même information structurée pour chaque actif.",
+  "Issuers, dealers and investors keep the processes they already use. Ownership is recorded in the background on a blockchain registry.":"Les émetteurs, les courtiers et les investisseurs conservent les processus qu'ils utilisent déjà. La propriété est inscrite en arrière-plan dans un registre fondé sur la chaîne de blocs.",
+  "Two ways to invest":"Deux façons d'investir",
+  "Eligible investors can buy through their own dealer or through Ocree Capital.":"Les investisseurs admissibles peuvent investir par l'entremise de leur propre courtier ou d'Ocree Capital.",
+  "How a property reaches investors":"Comment une propriété rejoint les investisseurs",
+  "Infrastructure":"Infrastructure",
+  "We connect asset owners to the dealers who already serve investors. One consistent process replaces a market that ran on relationships and paperwork.":"Nous relions les propriétaires d'actifs aux courtiers qui servent déjà les investisseurs. Un processus uniforme remplace un marché qui reposait sur les relations et la paperasse.",
+  "Connected":"Connecté",
+  "Ocree works with the brokers, advisors and institutions already in the market. We onboard the property, manage compliance, then distribute through wealth firms, exempt market dealers and integrated platforms across Canada.":"Ocree travaille avec les courtiers, les conseillers et les institutions déjà présents sur le marché. Nous intégrons la propriété, gérons la conformité, puis assurons la distribution par l'intermédiaire de sociétés de gestion de patrimoine, de courtiers sur le marché dispensé et de plateformes intégrées partout au Canada.",
+  "Past offerings":"Placements antérieurs",
+  "A residential tower in Uptown Waterloo, developed by Momentum Developments.":"Une tour résidentielle dans Uptown Waterloo, développée par Momentum Developments.",
+  "Ocree Capital is a Canadian exempt market dealer built for private commercial real estate. Commercial property is our first asset class.":"Ocree Capital est un courtier canadien sur le marché dispensé conçu pour l'immobilier commercial privé. L'immobilier commercial est notre première catégorie d'actifs.",
+  "Investor protection shapes every step, from asset review to distribution.":"La protection des investisseurs guide chaque étape, de l'examen de l'actif à sa distribution.",
+  "Solutions for asset owners, dealers, advisors, eligible investors and industry partners.":"Des solutions pour les propriétaires d'actifs, les courtiers, les conseillers, les investisseurs admissibles et les partenaires du secteur.",
+  "Benefits":"Avantages",
+  "A regulated path to raise capital through registered dealers.":"Une voie réglementée pour mobiliser des capitaux par l'entremise de courtiers inscrits.",
+  "One disclosure standard for your property through OARDS.":"Une norme d'information unique pour votre propriété grâce à OARDS.",
+  "Access to registered dealers who already serve eligible investors.":"Un accès à des courtiers inscrits qui servent déjà des investisseurs admissibles.",
+  "What we look for":"Ce que nous recherchons",
+  "Canadian commercial real estate, including existing properties, new builds or debt.":"De l'immobilier commercial canadien, notamment des propriétés existantes, de nouvelles constructions ou de la dette.",
+  "A clear ownership structure and financing goal.":"Une structure de propriété et un objectif de financement clairs.",
+  "Owners ready to share documents for OARDS review.":"Des propriétaires prêts à fournir les documents nécessaires à l'examen OARDS.",
+  "Curious about private real estate?":"Vous vous intéressez à l'immobilier privé?",
+  "Most private offerings in Canada are available to accredited investors under National Instrument 45-106. Investors may access eligible offerings through their own dealer or through Ocree Capital.":"Au Canada, la plupart des placements privés sont offerts aux investisseurs qualifiés en vertu du Règlement 45-106. Les investisseurs peuvent accéder aux placements admissibles par l'entremise de leur propre courtier ou d'Ocree Capital.",
+  "Eligibility depends on the exemption used for an offering and the investor's circumstances.":"L'admissibilité dépend de la dispense utilisée pour un placement et de la situation de l'investisseur.",
+  "What you're investing in":"Dans quoi investissez-vous?",
+  "Speak with your existing dealer or connect with Ocree Capital.":"Parlez à votre courtier actuel ou communiquez avec Ocree Capital.",
+  "Connect with Ocree Capital":"Communiquer avec Ocree Capital",
+  "Understand risk":"Comprendre le risque",
+  "Private market investments can lose value and may be hard to sell. Review the offering documents carefully.":"Les placements sur les marchés privés peuvent perdre de la valeur et être difficiles à revendre. Examinez attentivement les documents de placement.",
+  "How a commercial property moves from onboarding to investors.":"Comment une propriété commerciale passe de l'intégration aux investisseurs.",
+  "How the parties work together":"Comment les parties travaillent ensemble",
+  "Issuers, counsel, dealers and advisors keep their roles. Ocree gives each one the same process for diligence, issuance, distribution and reporting.":"Les émetteurs, les conseillers juridiques, les courtiers et les conseillers conservent leurs rôles. Ocree leur fournit un même processus de diligence, d'émission, de distribution et d'information.",
+  "Each offering is issued as a digital security, with ownership recorded on a blockchain-based registry. This is often called tokenization.":"Chaque placement est émis sous forme de titre numérique, dont la propriété est inscrite dans un registre fondé sur la chaîne de blocs. On parle souvent de jetonisation.",
+  "Where tokenization is heading":"L'évolution de la jetonisation",
+  "Real estate projected to be tokenized worldwide by 2035, up from under $0.3T in 2024.":"Valeur projetée de l'immobilier jetonisé dans le monde d'ici 2035, contre moins de 0,3 T$ en 2024.",
+  "Projected value of tokenized private real estate funds by 2035.":"Valeur projetée des fonds immobiliers privés jetonisés d'ici 2035.",
+  "McKinsey's base-case forecast for tokenized assets by 2030.":"Prévision de base de McKinsey pour les actifs jetonisés d'ici 2030.",
+  "Tokenized real-world assets on public blockchains as of October 29, 2026, excluding stablecoins.":"Actifs réels jetonisés sur des chaînes de blocs publiques au 29 octobre 2026, hors cryptomonnaies stables.",
+  "Third-party forecasts and data, shown for context only. They are not a prediction of any Ocree offering's performance.":"Prévisions et données de tiers présentées à titre contextuel seulement. Elles ne constituent pas une prévision du rendement d'un placement d'Ocree.",
+  "Mission":"Mission",
+  "Vision":"Vision",
+  "Private markets that connect as efficiently as public markets, with the same standard of disclosure. Built in Canada, designed to extend to private credit, private funds and other asset classes.":"Des marchés privés aussi efficaces et connectés que les marchés publics, avec la même norme d'information. Conçu au Canada pour s'étendre au crédit privé, aux fonds privés et à d'autres catégories d'actifs.",
+  "Co-Founder & CEO, Ocree":"Cofondateur et chef de la direction, Ocree",
+  "Co-Founder & President, Ocree Properties":"Cofondateur et président, Ocree Properties",
+  "Chief Legal Officer & Member of the BCSC Fintech Advisory Forum":"Cheffe des affaires juridiques et membre du forum consultatif sur les technologies financières de la BCSC",
+  "Keeping up with private markets":"Suivre l'évolution des marchés privés",
+  "Know Your Product":"Connaissance du produit",
+  "Coming soon":"À venir",
+  "Company announcements from Ocree Corporation and Ocree Capital Inc.":"Annonces d'Ocree Corporation et d'Ocree Capital Inc.",
+  "Questions about an offering, a partnership or the platform? Send us a note.":"Des questions sur un placement, un partenariat ou la plateforme? Écrivez-nous.",
+  "Province or country":"Province ou pays"
+});
+
 let currentLanguage = 'en';
 const textNodes = [];
 const attributes = [];
@@ -132,7 +194,7 @@ document.querySelector('.menu-toggle')?.addEventListener('click', (event) => {
   event.currentTarget.setAttribute('aria-label', translate(open ? 'Close menu' : 'Open menu', currentLanguage));
 });
 document.querySelector('[data-contact-form]')?.addEventListener('submit', () => {
-  if (currentLanguage === 'fr') document.querySelector('.form-status').textContent = 'Merci. Ce prototype local n’envoie pas encore les formulaires.';
+  if (currentLanguage === 'fr') document.querySelector('.form-status').textContent = 'Merci. Nous communiquerons bientôt avec vous.';
 });
 
 let savedLanguage = 'en';

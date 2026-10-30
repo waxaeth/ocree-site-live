@@ -47,5 +47,39 @@ if ('IntersectionObserver' in window && !motionPreference.matches) {
 
 document.querySelector('[data-contact-form]')?.addEventListener('submit', (event) => {
   event.preventDefault();
-  document.querySelector('.form-status').textContent = 'Thanks. This local prototype does not send form submissions yet.';
+  document.querySelector('.form-status').textContent = "Thanks. We'll be in touch soon.";
 });
+
+const requestedRole = new URLSearchParams(window.location.search).get('role');
+const roleSelect = document.querySelector('#role');
+if (requestedRole && roleSelect) {
+  const match = [...roleSelect.options].find((option) => option.value.toLowerCase() === requestedRole.toLowerCase());
+  if (match) roleSelect.value = match.value;
+}
+
+const counters = document.querySelectorAll('[data-count-to]');
+if (counters.length && 'IntersectionObserver' in window && !motionPreference.matches) {
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      const element = entry.target;
+      const target = Number(element.dataset.countTo);
+      const decimals = String(element.dataset.countTo).includes('.') ? 1 : 0;
+      const prefix = element.dataset.countPrefix || '';
+      const suffix = element.dataset.countSuffix || '';
+      const started = performance.now();
+      const duration = 1000;
+
+      const render = (now) => {
+        const progress = Math.min((now - started) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        element.textContent = `${prefix}${(target * eased).toFixed(decimals)}${suffix}`;
+        if (progress < 1) requestAnimationFrame(render);
+      };
+
+      requestAnimationFrame(render);
+      counterObserver.unobserve(element);
+    });
+  }, { threshold: 0.45 });
+  counters.forEach((counter) => counterObserver.observe(counter));
+}
