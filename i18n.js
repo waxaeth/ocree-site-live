@@ -56,7 +56,7 @@ Object.assign(fr, {
   "One disclosure standard for your property through OARDS.":"Une norme d'information unique pour votre propriété grâce à OARDS.",
   "Access to registered dealers who already serve eligible investors.":"Un accès à des courtiers inscrits qui servent déjà des investisseurs admissibles.",
   "What we look for":"Ce que nous recherchons",
-  "Canadian commercial real estate, including existing properties, new builds or debt.":"De l'immobilier commercial canadien, notamment des propriétés existantes, de nouvelles constructions ou de la dette.",
+  "Canadian commercial real estate: existing properties, new builds or debt.":"De l'immobilier commercial canadien : propriétés existantes, nouvelles constructions ou dette.",
   "A clear ownership structure and financing goal.":"Une structure de propriété et un objectif de financement clairs.",
   "Owners ready to share documents for OARDS review.":"Des propriétaires prêts à fournir les documents nécessaires à l'examen OARDS.",
   "Curious about private real estate?":"Vous vous intéressez à l'immobilier privé?",
