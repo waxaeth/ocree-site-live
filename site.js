@@ -64,9 +64,8 @@ if (counters.length && 'IntersectionObserver' in window && !motionPreference.mat
       if (!entry.isIntersecting) return;
       const element = entry.target;
       const target = Number(element.dataset.countTo);
-      const decimals = String(element.dataset.countTo).includes('.') ? 1 : 0;
-      const prefix = element.dataset.countPrefix || '';
-      const suffix = element.dataset.countSuffix || '';
+      const decimals = (String(element.dataset.countTo).split('.')[1] || '').length;
+      const prefix = element.dataset.countPrefix || '';      const suffix = element.dataset.countSuffix || '';
       const started = performance.now();
       const duration = 1000;
 
