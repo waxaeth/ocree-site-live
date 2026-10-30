@@ -137,3 +137,13 @@ html{scroll-padding-top:100px}body{background:#fff;font-size:16px;line-height:1.
 @media(max-width:900px){.hero{min-height:0;padding:54px 0 0}.hero-grid{min-height:0}.hero-grid>div:first-child,.hero h1{max-width:680px}.hero-copy{max-width:620px;margin-top:0}.hero-panorama{position:relative;inset:auto;height:340px;margin-top:34px;border-top:1px solid var(--line)}.hero-panorama:after{display:none}.hero-panorama img{top:0;right:-30px;height:100%;width:auto}}
 @media(max-width:600px){.hero{padding-top:34px}.hero-panorama{height:270px;margin-top:28px}.hero-panorama img{right:-135px}.hero h1{font-size:40px}.hero-copy{margin-top:0}}
 @media(max-width:420px){.hero-panorama{height:235px}.hero-panorama img{right:-115px}.hero h1{font-size:34px}}
+
+/* SVG geometry keeps each animated connector attached to its participant box. */
+.diagram{overflow:hidden}
+.diagram-connectors{position:absolute;z-index:1;inset:0;width:100%;height:100%;pointer-events:none}
+.diagram-connectors .diagram-connector{position:static;width:auto;height:auto;background:none;stroke:#7f8581;stroke-width:1.25;stroke-dasharray:1000;stroke-dashoffset:0;transform:none;vector-effect:non-scaling-stroke}
+.motion-ready .diagram-connectors .diagram-connector{stroke-dashoffset:1000}
+.motion-ready .diagram.visible .diagram-connectors .diagram-connector{animation:draw-svg-connector .85s cubic-bezier(.22,.75,.25,1) forwards}
+.motion-ready .diagram.visible .diagram-connectors .dc2{animation-delay:.1s}.motion-ready .diagram.visible .diagram-connectors .dc3{animation-delay:.2s}.motion-ready .diagram.visible .diagram-connectors .dc4{animation-delay:.3s}
+@keyframes draw-svg-connector{to{stroke-dashoffset:0}}
+@media(prefers-reduced-motion:reduce){.diagram-connectors .diagram-connector{stroke-dashoffset:0;animation:none!important}}
