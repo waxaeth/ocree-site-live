@@ -129,6 +129,22 @@ html{scroll-padding-top:100px}body{background:#fff;font-size:16px;line-height:1.
 
 .about-pillars .section-head{margin-bottom:46px}.about-pillars .three-col{border-top:1px solid var(--line)}.about-pillars .value{min-height:390px;padding:30px 30px 28px 0;border:0;border-bottom:1px solid var(--line)}.about-pillars .value:not(:first-child){padding-left:30px;border-left:1px solid var(--line)}.about-pillars .value-icon{height:150px;margin:0 0 28px;display:flex;align-items:center;justify-content:flex-start}.about-pillars .value-icon img{width:150px;height:150px;object-fit:contain;filter:grayscale(1) contrast(4);mix-blend-mode:multiply}.about-pillars .value h3{max-width:none;margin-bottom:14px}.about-pillars .value p{max-width:370px;margin:0;color:var(--muted);font-size:15px}
 @media(max-width:1000px){.about-pillars .value{min-height:350px}.about-pillars .value-icon{height:120px}.about-pillars .value-icon img{width:120px;height:120px}}
+
+/* Leadership grid: three equal, square-cornered profiles. */
+.team-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:32px;border-top:1px solid var(--line)}
+.team-member{display:block;padding:0 0 42px;border-bottom:1px solid var(--line)}
+.team-photo{margin-bottom:26px;aspect-ratio:4/5}
+.team-copy h3{font-size:25px;line-height:1.2;margin-bottom:8px}
+.team-role{min-height:44px;margin-bottom:22px;font-size:14px;line-height:1.45}
+.team-copy>p:not(.team-role){max-width:none;font-size:15px;line-height:1.65}
+.team-quote{margin-top:24px;padding:16px 0 0;border-top:2px solid var(--ink);border-left:0;font-size:14px!important;line-height:1.55!important}
+@media(max-width:1000px){.team-list{column-gap:22px}.team-copy h3{font-size:22px}.team-role{min-height:62px;font-size:13px}}
+@media(max-width:720px){.team-list{display:block}.team-member{padding:42px 0}.team-photo{max-width:420px}.team-copy h3{font-size:27px}}
+
+/* Keep the platform entry point prominent in the primary navigation. */
+.nav-actions .sign-in-link{display:inline-flex;align-items:center;min-height:40px;padding:0 14px;border:1px solid var(--ink);border-radius:2px;background:var(--paper);color:var(--ink);font-size:13px;font-weight:600;line-height:1;transition:background .2s,color .2s,border-color .2s}
+.nav-actions .sign-in-link:hover{background:var(--ink);color:var(--white);text-decoration:none}
+@media(max-width:1050px){.nav-actions .sign-in-link{display:none}}
 @media(max-width:720px){.about-pillars .section-head{margin-bottom:36px}.about-pillars .three-col{border-top:1px solid var(--line)}.about-pillars .value,.about-pillars .value:not(:first-child){min-height:0;padding:28px 0 32px;border-left:0;border-bottom:1px solid var(--line)}.about-pillars .value-icon{height:110px;margin-bottom:22px}.about-pillars .value-icon img{width:110px;height:110px}}
 
 .process-hero{position:relative;isolation:isolate;overflow:hidden}.process-hero:before{content:"";position:absolute;z-index:-1;inset:0;background:url('assets/blueprint-grid-overlay.png') right center / auto 125% no-repeat;opacity:.12;pointer-events:none}.process-hero>.shell{position:relative;z-index:1}
