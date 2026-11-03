@@ -145,6 +145,10 @@ html{scroll-padding-top:100px}body{background:#fff;font-size:16px;line-height:1.
 .nav-actions .sign-in-link{display:inline-flex;align-items:center;min-height:40px;padding:0 14px;border:1px solid var(--ink);border-radius:2px;background:var(--paper);color:var(--ink);font-size:13px;font-weight:600;line-height:1;transition:background .2s,color .2s,border-color .2s}
 .nav-actions .sign-in-link:hover{background:var(--ink);color:var(--white);text-decoration:none}
 @media(max-width:1050px){.nav-actions .sign-in-link{display:none}}
+.contact-trap{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+.turnstile{min-height:65px;margin-bottom:12px}
+.form-status[data-error="true"]{color:#9b2f2f}
+.form button:disabled{cursor:wait;opacity:.6}
 @media(max-width:720px){.about-pillars .section-head{margin-bottom:36px}.about-pillars .three-col{border-top:1px solid var(--line)}.about-pillars .value,.about-pillars .value:not(:first-child){min-height:0;padding:28px 0 32px;border-left:0;border-bottom:1px solid var(--line)}.about-pillars .value-icon{height:110px;margin-bottom:22px}.about-pillars .value-icon img{width:110px;height:110px}}
 
 .process-hero{position:relative;isolation:isolate;overflow:hidden}.process-hero:before{content:"";position:absolute;z-index:-1;inset:0;background:url('assets/blueprint-grid-overlay.png') right center / auto 125% no-repeat;opacity:.12;pointer-events:none}.process-hero>.shell{position:relative;z-index:1}

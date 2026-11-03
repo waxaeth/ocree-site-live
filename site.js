@@ -45,9 +45,60 @@ if ('IntersectionObserver' in window && !motionPreference.matches) {
   });
 }
 
-document.querySelector('[data-contact-form]')?.addEventListener('submit', (event) => {
+const contactForm = document.querySelector('[data-contact-form]');
+const contactStatus = contactForm?.querySelector('.form-status');
+const turnstileElement = contactForm?.querySelector('[data-turnstile-widget]');
+
+function initialiseTurnstile() {
+  const siteKey = contactForm?.dataset.turnstileSitekey;
+  if (!turnstileElement || !siteKey || siteKey === 'REPLACE_WITH_TURNSTILE_SITE_KEY' || !window.turnstile || turnstileElement.dataset.rendered) return;
+  window.turnstile.render(turnstileElement, {sitekey: siteKey, theme: 'light'});
+  turnstileElement.dataset.rendered = 'true';
+}
+
+if (turnstileElement) {
+  initialiseTurnstile();
+  const turnstileTimer = window.setInterval(() => {
+    initialiseTurnstile();
+    if (turnstileElement.dataset.rendered) window.clearInterval(turnstileTimer);
+  }, 250);
+  window.setTimeout(() => window.clearInterval(turnstileTimer), 10000);
+}
+
+function setContactStatus(message, isError = false) {
+  if (!contactStatus) return;
+  contactStatus.textContent = message;
+  contactStatus.dataset.error = String(isError);
+}
+
+contactForm?.addEventListener('submit', async (event) => {
   event.preventDefault();
-  document.querySelector('.form-status').textContent = "Thanks. We'll be in touch soon.";
+  const submitButton = contactForm.querySelector('button[type="submit"]');
+  const turnstileToken = window.turnstile?.getResponse?.();
+
+  if (!turnstileToken) {
+    setContactStatus('Please complete the security check.', true);
+    return;
+  }
+
+  submitButton.disabled = true;
+  setContactStatus('Sending...');
+  try {
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({...Object.fromEntries(new FormData(contactForm)), turnstileToken})
+    });
+    const result = await response.json();
+    if (!response.ok) throw new Error(result.error || 'Unable to send your message.');
+    contactForm.reset();
+    window.turnstile?.reset?.();
+    setContactStatus("Thanks. We'll be in touch soon.");
+  } catch (error) {
+    setContactStatus(error.message || 'Unable to send your message. Please email contact@ocreefg.com.', true);
+  } finally {
+    submitButton.disabled = false;
+  }
 });
 
 const requestedRole = new URLSearchParams(window.location.search).get('role');
