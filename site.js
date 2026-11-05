@@ -2,6 +2,29 @@ const toggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav-links');
 const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
 
+if (nav && !nav.querySelector('.nav-home-link')) {
+  const homeLink = document.createElement('a');
+  homeLink.className = 'nav-home-link';
+  homeLink.href = 'index.html';
+  homeLink.textContent = 'Home';
+  nav.insertBefore(homeLink, nav.firstChild);
+}
+
+const solutionsOverviewMenu = document.querySelector('.solutions-menu');
+if (solutionsOverviewMenu && !solutionsOverviewMenu.querySelector('a[href="solutions.html"]')) {
+  const overviewLink = document.createElement('a');
+  overviewLink.href = 'solutions.html';
+  overviewLink.textContent = 'Solutions';
+  if (window.location.pathname.endsWith('/solutions.html')) overviewLink.setAttribute('aria-current', 'page');
+  solutionsOverviewMenu.insertBefore(overviewLink, solutionsOverviewMenu.firstChild);
+}
+
+document.querySelectorAll('p').forEach((paragraph) => {
+  if (paragraph.textContent.trim() === 'A residential tower in Uptown Waterloo.') {
+    paragraph.textContent = 'A residential tower in Uptown Waterloo, by Momentum Developments.';
+  }
+});
+
 const cookieStorageKey = 'ocree-cookie-consent';
 const cookieBanner = document.createElement('section');
 cookieBanner.className = 'cookie-banner';
