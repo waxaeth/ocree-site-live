@@ -10,13 +10,23 @@ if (nav && !nav.querySelector('.nav-home-link')) {
   nav.insertBefore(homeLink, nav.firstChild);
 }
 
-const solutionsOverviewMenu = document.querySelector('.solutions-menu');
-if (solutionsOverviewMenu && !solutionsOverviewMenu.querySelector('a[href="solutions.html"]')) {
-  const overviewLink = document.createElement('a');
-  overviewLink.href = 'solutions.html';
-  overviewLink.textContent = 'Solutions';
-  if (window.location.pathname.endsWith('/solutions.html')) overviewLink.setAttribute('aria-current', 'page');
-  solutionsOverviewMenu.insertBefore(overviewLink, solutionsOverviewMenu.firstChild);
+const audienceLinks = {
+  '#owners': 'asset-owners.html',
+  '#dealers': 'dealers-advisors.html',
+  '#investors': 'investors.html'
+};
+document.querySelectorAll('a[href^="solutions.html#"]').forEach((link) => {
+  const target = audienceLinks[new URL(link.href).hash];
+  if (target) link.href = target;
+});
+
+const footerNav = document.querySelector('.footer-col');
+if (footerNav && !footerNav.querySelector('.footer-home-link')) {
+  const footerHomeLink = document.createElement('a');
+  footerHomeLink.className = 'footer-home-link';
+  footerHomeLink.href = 'index.html';
+  footerHomeLink.textContent = 'Home';
+  footerNav.insertBefore(footerHomeLink, footerNav.querySelector('a'));
 }
 
 document.querySelectorAll('p').forEach((paragraph) => {
