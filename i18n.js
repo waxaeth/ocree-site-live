@@ -114,14 +114,6 @@ const description = document.querySelector('meta[name="description"]');
 const englishDescription = description?.content || '';
 const translate = (value, language) => language === 'fr' ? fr[value] || value : value;
 
-function flag(language) {
-  const element = document.createElement('span');
-  element.className = `language-flag flag-${language}`;
-  element.setAttribute('aria-hidden', 'true');
-  element.append(document.createElement('i'));
-  return element;
-}
-
 const switcher = document.createElement('div');
 switcher.className = 'language-switcher';
 const trigger = document.createElement('button');
@@ -129,14 +121,13 @@ trigger.className = 'language-trigger';
 trigger.type = 'button';
 trigger.setAttribute('aria-haspopup', 'menu');
 trigger.setAttribute('aria-expanded', 'false');
-const activeFlag = flag('en');
 const activeCode = document.createElement('span');
 activeCode.className = 'language-code';
 activeCode.textContent = 'EN';
 const chevron = document.createElement('span');
 chevron.className = 'language-chevron';
 chevron.setAttribute('aria-hidden', 'true');
-trigger.append(activeFlag, activeCode, chevron);
+trigger.append(activeCode, chevron);
 
 const menu = document.createElement('div');
 menu.className = 'language-menu';
@@ -147,7 +138,7 @@ menu.hidden = true;
   option.type = 'button';
   option.dataset.language = code;
   option.setAttribute('role', 'menuitemradio');
-  option.append(flag(code), document.createTextNode(label));
+  option.append(document.createTextNode(label));
   option.addEventListener('click', () => applyLanguage(code));
   menu.append(option);
 });
@@ -173,7 +164,6 @@ function applyLanguage(language) {
   attributes.forEach(({ element, name, value }) => element.setAttribute(name, translate(value, currentLanguage)));
   document.title = translate(englishTitle, currentLanguage);
   if (description) description.content = translate(englishDescription, currentLanguage);
-  activeFlag.className = `language-flag flag-${currentLanguage}`;
   activeCode.textContent = currentLanguage.toUpperCase();
   trigger.setAttribute('aria-label', currentLanguage === 'fr' ? 'Choisir la langue' : 'Choose language');
   menu.querySelectorAll('[data-language]').forEach((option) => {

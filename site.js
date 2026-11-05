@@ -2,6 +2,75 @@ const toggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav-links');
 const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
 
+const cookieStorageKey = 'ocree-cookie-consent';
+const cookieBanner = document.createElement('section');
+cookieBanner.className = 'cookie-banner';
+cookieBanner.setAttribute('aria-label', 'Cookie consent');
+cookieBanner.innerHTML = '<div class="cookie-banner-copy"><p>Select “Accept all” to agree to our use of cookies and similar technologies to enhance your browsing experience, security, analytics and customization. Select “Manage cookies” to make more choices or opt out.</p></div><div class="cookie-banner-actions"><button class="cookie-manage" type="button">Manage cookies</button><button class="cookie-decline" type="button">Decline all</button><button class="cookie-accept" type="button">Accept all</button></div>';
+document.body.append(cookieBanner);
+
+const cookieDialog = document.createElement('dialog');
+cookieDialog.className = 'cookie-dialog';
+cookieDialog.setAttribute('aria-labelledby', 'cookie-dialog-title');
+cookieDialog.innerHTML = '<div class="cookie-dialog-inner"><div class="cookie-dialog-head"><div><p class="eyebrow">Privacy choices</p><h2 id="cookie-dialog-title">Manage cookies</h2></div><button class="cookie-dialog-close" type="button" aria-label="Close cookie preferences">×</button></div><p>Choose which optional cookies and similar technologies you allow. Essential cookies remain active because they support core site functions.</p><label class="cookie-option"><span><strong>Essential</strong><small>Required for basic navigation, security and preferences.</small></span><input type="checkbox" checked disabled></label><label class="cookie-option"><span><strong>Analytics</strong><small>Helps us understand site usage and improve the experience.</small></span><input class="cookie-analytics" type="checkbox"></label><label class="cookie-option"><span><strong>Customization</strong><small>Remembers optional preferences that personalize your visit.</small></span><input class="cookie-customization" type="checkbox"></label><div class="cookie-dialog-actions"><button class="button light cookie-dialog-decline" type="button">Decline all</button><button class="button cookie-dialog-save" type="button">Save choices</button></div></div>';
+document.body.append(cookieDialog);
+
+const savedCookieConsent = (() => { try { return JSON.parse(localStorage.getItem(cookieStorageKey) || 'null'); } catch { return null; } })();
+const analyticsChoice = cookieDialog.querySelector('.cookie-analytics');
+const customizationChoice = cookieDialog.querySelector('.cookie-customization');
+function saveCookieConsent(consent) {
+  try { localStorage.setItem(cookieStorageKey, JSON.stringify({ ...consent, savedAt: new Date().toISOString() })); } catch {}
+  cookieBanner.hidden = true;
+  cookieDialog.close();
+}
+function showCookieDialog() {
+  analyticsChoice.checked = Boolean(savedCookieConsent?.analytics);
+  customizationChoice.checked = Boolean(savedCookieConsent?.customization);
+  cookieDialog.showModal();
+}
+cookieBanner.querySelector('.cookie-accept').addEventListener('click', () => saveCookieConsent({essential:true, analytics:true, customization:true}));
+cookieBanner.querySelector('.cookie-decline').addEventListener('click', () => saveCookieConsent({essential:true, analytics:false, customization:false}));
+cookieBanner.querySelector('.cookie-manage').addEventListener('click', showCookieDialog);
+cookieDialog.querySelector('.cookie-dialog-close').addEventListener('click', () => cookieDialog.close());
+cookieDialog.querySelector('.cookie-dialog-decline').addEventListener('click', () => saveCookieConsent({essential:true, analytics:false, customization:false}));
+cookieDialog.querySelector('.cookie-dialog-save').addEventListener('click', () => saveCookieConsent({essential:true, analytics:analyticsChoice.checked, customization:customizationChoice.checked}));
+if (savedCookieConsent) cookieBanner.hidden = true;
+
+const teamCards = document.querySelectorAll('[data-team-card]');
+if (teamCards.length) {
+  const teamDialog = document.createElement('dialog');
+  teamDialog.className = 'team-dialog';
+  teamDialog.setAttribute('aria-labelledby', 'team-dialog-name');
+  teamDialog.innerHTML = '<div class="team-dialog-inner"><button class="team-dialog-close" type="button" aria-label="Close biography">×</button><div class="team-dialog-top"><div class="team-dialog-image"></div><div><p class="eyebrow">Ocree leadership</p><h2 id="team-dialog-name"></h2><p class="team-dialog-role"></p></div></div><div class="team-dialog-copy"></div><div class="team-dialog-footer"><a class="team-dialog-link" href="#" target="_blank" rel="noopener noreferrer">View LinkedIn profile →</a><button class="button" type="button">Close</button></div></div>';
+  document.body.append(teamDialog);
+  const closeTeamDialog = () => teamDialog.close();
+  teamDialog.querySelector('.team-dialog-close').addEventListener('click', closeTeamDialog);
+  teamDialog.querySelector('.team-dialog-footer button').addEventListener('click', closeTeamDialog);
+  const linkedInProfiles = {
+    'Ted L. Davis, CCIM, SIOR, CIM': 'https://www.linkedin.com/in/ted-davis-b950bb26/',
+    'Ryan Wilkinson': 'https://www.linkedin.com/in/ryan-parkinson-91a70619/',
+    'Anne Ramsay': 'https://www.linkedin.com/in/aframsay/'
+  };
+  teamCards.forEach((card) => card.addEventListener('click', () => {
+    const wrap = card.closest('.team-card-wrap');
+    teamDialog.querySelector('.team-dialog-image').innerHTML = card.querySelector('.team-card-image').innerHTML;
+    teamDialog.querySelector('#team-dialog-name').textContent = card.querySelector('.team-card-name').textContent;
+    teamDialog.querySelector('.team-dialog-role').textContent = card.querySelector('.team-role').textContent;
+    teamDialog.querySelector('.team-dialog-copy').innerHTML = wrap.querySelector('.team-full-bio').innerHTML;
+    teamDialog.querySelector('.team-dialog-link').href = linkedInProfiles[card.querySelector('.team-card-name').textContent.trim()] || '#';
+    teamDialog.showModal();
+  }));
+}
+const solutionToggle = document.querySelector('.solutions-toggle');
+const solutionMenu = document.querySelector('.solutions-menu');
+
+function closeSolutions() {
+  if (!solutionToggle || !solutionMenu) return;
+  solutionMenu.hidden = true;
+  solutionToggle.setAttribute('aria-expanded', 'false');
+  solutionToggle.parentElement.classList.remove('open');
+}
+
 function closeNavigation() {
   nav?.classList.remove('open');
   toggle?.setAttribute('aria-expanded', 'false');
@@ -13,14 +82,33 @@ toggle?.addEventListener('click', () => {
   toggle.setAttribute('aria-expanded', String(open));
 });
 document.querySelectorAll('.nav-links a').forEach((link) => link.addEventListener('click', closeNavigation));
+solutionToggle?.addEventListener('click', (event) => {
+  event.stopPropagation();
+  const open = solutionMenu.hidden;
+  solutionMenu.hidden = !open;
+  solutionToggle.setAttribute('aria-expanded', String(open));
+  solutionToggle.parentElement.classList.toggle('open', open);
+});
+document.querySelectorAll('.solutions-menu a').forEach((link) => link.addEventListener('click', () => {
+  closeSolutions();
+  closeNavigation();
+}));
 document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape' && nav?.classList.contains('open')) {
-    closeNavigation();
-    toggle.focus();
+  if (event.key === 'Escape') {
+    if (solutionMenu && !solutionMenu.hidden) {
+      closeSolutions();
+      solutionToggle.focus();
+    } else if (nav?.classList.contains('open')) {
+      closeNavigation();
+      toggle.focus();
+    }
   }
 });
 document.addEventListener('click', (event) => {
-  if (!event.target.closest('.nav')) closeNavigation();
+  if (!event.target.closest('.nav')) {
+    closeNavigation();
+    closeSolutions();
+  }
 });
 window.matchMedia('(min-width: 1051px)').addEventListener('change', (event) => {
   if (event.matches) closeNavigation();
