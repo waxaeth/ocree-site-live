@@ -71,6 +71,8 @@ if (savedCookieConsent) cookieBanner.hidden = true;
 
 const teamCards = document.querySelectorAll('[data-team-card]');
 if (teamCards.length) {
+  const originalBioHtml = new Map([...teamCards].map((card) => [card, card.closest('.team-card-wrap').querySelector('.team-full-bio').innerHTML]));
+  const originalRoles = new Map([...teamCards].map((card) => [card, card.querySelector('.team-role').textContent]));
   const teamDialog = document.createElement('dialog');
   teamDialog.className = 'team-dialog';
   teamDialog.setAttribute('aria-labelledby', 'team-dialog-name');
@@ -85,12 +87,12 @@ if (teamCards.length) {
     'Anne Ramsay': 'https://www.linkedin.com/in/aframsay/'
   };
   teamCards.forEach((card) => card.addEventListener('click', () => {
-    const wrap = card.closest('.team-card-wrap');
     teamDialog.querySelector('.team-dialog-image').innerHTML = card.querySelector('.team-card-image').innerHTML;
     teamDialog.querySelector('#team-dialog-name').textContent = card.querySelector('.team-card-name').textContent;
-    teamDialog.querySelector('.team-dialog-role').textContent = card.querySelector('.team-role').textContent;
-    teamDialog.querySelector('.team-dialog-copy').innerHTML = wrap.querySelector('.team-full-bio').innerHTML;
+    teamDialog.querySelector('.team-dialog-role').textContent = originalRoles.get(card);
+    teamDialog.querySelector('.team-dialog-copy').innerHTML = originalBioHtml.get(card);
     teamDialog.querySelector('.team-dialog-link').href = linkedInProfiles[card.querySelector('.team-card-name').textContent.trim()] || '#';
+    window.ocreeRefreshTranslations?.();
     teamDialog.showModal();
   }));
 }
@@ -188,7 +190,7 @@ if (turnstileElement) {
 
 function setContactStatus(message, isError = false) {
   if (!contactStatus) return;
-  contactStatus.textContent = message;
+  contactStatus.textContent = window.ocreeTranslate?.(message) || message;
   contactStatus.dataset.error = String(isError);
 }
 

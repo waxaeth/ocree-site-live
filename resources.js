@@ -12,8 +12,14 @@ const staticDates = new Map([
 ])
 
 function formatArticleDate(value) {
-  return new Intl.DateTimeFormat('en-CA', {year: 'numeric', month: 'short', day: 'numeric'}).format(new Date(value))
+  return new Intl.DateTimeFormat(window.ocreeLanguage === 'fr' ? 'fr-CA' : 'en-CA', {year: 'numeric', month: 'short', day: 'numeric'}).format(new Date(value))
 }
+
+window.addEventListener('ocree:languagechange', () => {
+  document.querySelectorAll('.resource-date[datetime]').forEach((date) => {
+    date.textContent = formatArticleDate(`${date.dateTime}T12:00:00Z`)
+  })
+})
 
 function renderArticleCard(article) {
   const isExternal = article.articleType === 'externalNews'

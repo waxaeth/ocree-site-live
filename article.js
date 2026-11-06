@@ -2,6 +2,18 @@ const ARTICLE_PROJECT_ID = 'tgwzqc0t'
 const ARTICLE_DATASET = 'production'
 const ARTICLE_API_VERSION = '2025-02-19'
 const ARTICLE_QUERY = encodeURIComponent(`*[_type == "article" && slug.current == $slug][0]{title,articleType,excerpt,publishedAt,externalUrl,heroImage{"url":asset->url},body[]{...,"imageUrl":asset->url}}`)
+let activeArticle = null
+
+function updateArticleLocale() {
+  if (!activeArticle) return
+  const published = new Intl.DateTimeFormat(window.ocreeLanguage === 'fr' ? 'fr-CA' : 'en-CA', {year: 'numeric', month: 'long', day: 'numeric'}).format(new Date(activeArticle.publishedAt))
+  document.title = `${window.ocreeTranslate?.(activeArticle.title) || activeArticle.title} | Ocree`
+  document.querySelector('.article-meta span:last-child').textContent = published
+  const details = document.querySelectorAll('.article-aside dd')
+  if (details[1]) details[1].textContent = published
+}
+
+window.addEventListener('ocree:languagechange', updateArticleLocale)
 
 function articleText(block) {
   return (block.children || []).map((child) => child.text || '').join('')
@@ -79,14 +91,12 @@ async function loadSanityArticle() {
       if (!fallback.ok) throw new Error(`Article not found: ${slug}`)
       article = await fallback.json()
     }
-    document.title = `${article.title} | Ocree`
+    activeArticle = article
+    updateArticleLocale()
     page.querySelector('.article-title').textContent = article.title
     page.querySelector('.article-dek').textContent = article.excerpt || ''
-    const published = new Intl.DateTimeFormat('en-CA', {year: 'numeric', month: 'long', day: 'numeric'}).format(new Date(article.publishedAt))
     page.querySelector('.article-meta span:nth-child(2)').textContent = 'Article'
-    page.querySelector('.article-meta span:last-child').textContent = published
     const details = page.querySelectorAll('.article-aside dd')
-    if (details[1]) details[1].textContent = published
     if (details[2]) details[2].textContent = 'Private market infrastructure'
     const placeholder = page.querySelector('.article-image-placeholder')
     if (article.heroImage?.url) {

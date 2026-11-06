@@ -90,29 +90,139 @@ Object.assign(fr, {
   "Province or country":"Province ou pays"
 });
 
+Object.assign(fr, {
+  "Solutions":"Solutions", "Dealers and advisors":"Courtiers et conseillers", "Investors":"Investisseurs", "Contact":"Nous joindre",
+  "Your connection to private markets":"Votre lien avec les marchés privés",
+  "Ocree social media":"Réseaux sociaux d'Ocree", "Ocree on X":"Ocree sur X", "Ocree on LinkedIn":"Ocree sur LinkedIn", "Ocree on YouTube":"Ocree sur YouTube",
+  "An ecosystem for investors and issuers, supported by dealers and institutional partners.":"Un écosystème pour les investisseurs et les émetteurs, soutenu par des courtiers et des partenaires institutionnels.",
+  "Whether you hold existing property, new builds or debt, Ocree prepares your asset for distribution through registered dealers across Canada.":"Que vous déteniez des immeubles existants, de nouveaux projets ou des créances, Ocree prépare votre actif à être distribué par des courtiers inscrits partout au Canada.",
+  "Reviewed properties reach registered dealers, so more eligible investors can access them.":"Les propriétés examinées sont présentées aux courtiers inscrits afin qu'un plus grand nombre d'investisseurs admissibles puissent y accéder.",
+  "Using established channels":"En utilisant les circuits établis",
+  "Issuers, dealers and investors keep the processes they already use. Ownership of the securities is recorded on a distributed ledger.":"Les émetteurs, les courtiers et les investisseurs conservent leurs processus habituels. La propriété des titres est inscrite dans un registre distribué.",
+  "We onboard the asset, review it through OARDS, structure the offering and facilitate distribution through registered dealers.":"Nous intégrons l'actif, l'examinons au moyen d'OARDS, structurons le placement et facilitons sa distribution par l'entremise de courtiers inscrits.",
+  "We connect asset owners to the dealers who already serve investors. One consistent process replaces a market based on relationships and paperwork.":"Nous relions les propriétaires d'actifs aux courtiers qui servent déjà les investisseurs. Un processus uniforme remplace un marché fondé sur les relations et la paperasse.",
+  "Ocree works with the brokers, advisors and institutions already in the market. We onboard the property, manage compliance and facilitate distribution through wealth firms, dealers and integrated platforms across Canada.":"Ocree travaille avec les courtiers, les conseillers et les institutions déjà présents sur le marché. Nous intégrons la propriété, gérons la conformité et facilitons la distribution par les sociétés de gestion de patrimoine, les courtiers et les plateformes intégrées partout au Canada.",
+  "Issuers, counsel, dealers and advisors keep their roles. Ocree provides one process for diligence, issuance, distribution and reporting.":"Les émetteurs, les conseillers juridiques, les courtiers et les conseillers conservent leurs rôles. Ocree fournit un seul processus pour la diligence raisonnable, l'émission, la distribution et la communication de l'information.",
+  "Documents, ownership, KYB and asset diligence.":"Documents, propriété, vérification de l'entreprise (KYB) et diligence raisonnable sur l'actif.",
+  "Disclosure review.":"Examen de l'information à fournir.", "Legal structuring and design.":"Structuration et conception juridiques.",
+  "Ongoing disclosure and reporting.":"Information continue et production de rapports.",
+  "Private wealth professionals planning to increase private market allocations in 2026.":"Professionnels de la gestion de patrimoine prévoyant augmenter leurs placements sur les marchés privés en 2026.",
+  "Hamilton Lane also found that \"81% of wealth professionals report that client education significantly boosts interest in private markets,\"":"Hamilton Lane a également constaté que « 81 % des professionnels de la gestion de patrimoine indiquent que la formation des clients accroît considérablement leur intérêt pour les marchés privés ».",
+  "Almost half of Canadian advisors surveyed allocate to private markets.":"Près de la moitié des conseillers canadiens interrogés investissent dans les marchés privés.",
+  "Hamilton Lane, Jan 2026.":"Hamilton Lane, janv. 2026.", "iCapital Canada, Mar 2026.":"iCapital Canada, mars 2026.",
+  "Ocree brings a consistent review and disclosure process to the parties already active in private markets.":"Ocree offre un processus uniforme d'examen et d'information aux acteurs déjà présents sur les marchés privés.",
+  "Ocree prepares commercial real estate assets for distribution through registered dealers across Canada.":"Ocree prépare les actifs immobiliers commerciaux à être distribués par des courtiers inscrits partout au Canada.",
+  "A path to raise capital through registered dealers.":"Une voie pour mobiliser des capitaux par l'entremise de courtiers inscrits.",
+  "Canadian commercial real estate: existing properties, new builds, equity or debt.":"Immobilier commercial canadien : propriétés existantes, nouveaux projets, capitaux propres ou créances.",
+  "Legal Advisors.":"Conseillers juridiques.", "Data, custody and exchanges.":"Données, garde et plateformes d'échange.",
+  "A residential tower in Uptown Waterloo, by Momentum Developments.":"Une tour résidentielle dans le quartier Uptown Waterloo, réalisée par Momentum Developments.",
+  "Investors may access eligible offerings through their own dealer or through Ocree Capital, subject to the applicable exemption and their circumstances.":"Les investisseurs peuvent accéder aux placements admissibles par l'entremise de leur propre courtier ou d'Ocree Capital, selon la dispense applicable et leur situation.",
+  "Each offering comes with its own documents, terms and resale options.":"Chaque placement comporte ses propres documents, modalités et possibilités de revente.",
+  "Speak with your existing dealer.":"Parlez à votre courtier actuel.",
+  "They saw how much of private real estate still depended on phone calls, spreadsheets and personal introductions.":"Ils ont constaté à quel point l'immobilier privé dépendait encore des appels téléphoniques, des feuilles de calcul et des présentations personnelles.",
+  "Ocree started in Canada, working with regulators from the beginning. Commercial real estate is our first asset class.":"Ocree a vu le jour au Canada en travaillant dès le départ avec les organismes de réglementation. L'immobilier commercial est notre première catégorie d'actifs.",
+  "Ocree connects private asset investments with investors through a consistent, regulated process. We start with commercial real estate, combining OARDS review, digital securities and distribution through registered dealers.":"Ocree relie les placements dans des actifs privés aux investisseurs au moyen d'un processus uniforme et réglementé. Nous commençons par l'immobilier commercial, en combinant l'examen OARDS, les titres numériques et la distribution par des courtiers inscrits.",
+  "Private markets that connect as efficiently as public markets, with the same standard of disclosure. Built in Canada, designed to extend to private equity and credit, private funds and other asset classes.":"Des marchés privés aussi bien connectés que les marchés publics, avec la même norme d'information. Conçu au Canada pour s'étendre aux capitaux propres et au crédit privés, aux fonds privés et à d'autres catégories d'actifs.",
+  "Every step is designed with regulatory compliance in mind.":"Chaque étape est conçue dans le respect des exigences réglementaires.",
+  "Chief Legal Officer":"Cheffe des affaires juridiques", "Bio":"Biographie", "Close":"Fermer",
+  "Over 20 years spanning commercial real estate, capital markets and entrepreneurship.":"Plus de 20 ans d'expérience en immobilier commercial, sur les marchés financiers et en entrepreneuriat.",
+  "Over 20 years in commercial real estate, investment analysis and transaction structuring.":"Plus de 20 ans d'expérience en immobilier commercial, en analyse de placements et en structuration d'opérations.",
+  "Over 25 years in financial markets, legal and accounting, including senior regulatory roles.":"Plus de 25 ans d'expérience dans les marchés financiers, le droit et la comptabilité, notamment dans des postes de haute direction en réglementation.",
+  "Ocree leadership":"Direction d'Ocree", "View LinkedIn profile →":"Voir le profil LinkedIn →",
+  "Keep up with private markets":"Suivre l'actualité des marchés privés", "Ocree media":"Médias Ocree", "Read article":"Lire l'article",
+  "External news":"Actualités externes", "RENX · External news":"RENX · Actualités externes", "Business Wire · External news":"Business Wire · Actualités externes",
+  "Ocree Capital Inc. receives regulatory approval":"Ocree Capital Inc. obtient l'approbation réglementaire",
+  "Ocree launches its regulated platform for commercial real estate transactions.":"Ocree lance sa plateforme réglementée pour les opérations immobilières commerciales.",
+  "Ocree Capital creates blockchain-based CRE platform":"Ocree Capital crée une plateforme immobilière commerciale fondée sur la chaîne de blocs",
+  "First investment involves a new-build, 156-apartment Winnipeg property.":"Le premier placement porte sur un nouvel immeuble de 156 appartements à Winnipeg.",
+  "$51.9 Million Canadian Commercial Real Estate Property Tokenized by Polymesh and Ocree Capital":"Polymesh et Ocree Capital jetonisent une propriété immobilière commerciale canadienne de 51,9 millions de dollars",
+  "Partnership brings blockchain-powered commercial real estate investment opportunities to the Canadian market.":"Ce partenariat offre au marché canadien des possibilités de placement immobilier commercial fondées sur la chaîne de blocs.",
+  "Why Private Markets Need Modern Infrastructure":"Pourquoi les marchés privés ont besoin d'une infrastructure moderne",
+  "Private market infrastructure helps Canadian property owners reach dealers whose clients want private real estate, with consistent diligence and clear records.":"L'infrastructure des marchés privés aide les propriétaires canadiens à joindre les courtiers dont les clients recherchent des placements immobiliers privés, grâce à une diligence uniforme et à des registres clairs.",
+  "Article":"Article", "Article details":"Détails de l'article", "Published":"Publié le", "Topic":"Sujet", "Back to Resources":"Retour aux ressources", "← Resources":"← Ressources",
+  "News release":"Communiqué", "September 17, 2024":"17 septembre 2024", "Regulatory approval":"Approbation réglementaire", "Private market infrastructure":"Infrastructure des marchés privés",
+  "Ocree Capital":"Ocree Capital", "Conflicts of Interest":"Conflits d'intérêts", "Account Agreement":"Convention de compte",
+  "Ocree Capital Inc., Ocree Properties Inc. and Ocree Services Inc. are wholly owned subsidiaries of Ocree Corporation. Ocree Capital is a registered exempt market dealer in all provinces and territories of Canada; Quebec subject to regulatory approval. Ocree Capital is not a member of CIRO or the CIPF. This website is for information purposes only and is not investment, tax or financial advice.":"Ocree Capital Inc., Ocree Properties Inc. et Ocree Services Inc. sont des filiales en propriété exclusive d'Ocree Corporation. Ocree Capital est un courtier sur le marché dispensé inscrit dans toutes les provinces et tous les territoires du Canada; au Québec, sous réserve de l'approbation réglementaire. Ocree Capital n'est pas membre de l'OCRI ni du FCPI. Ce site Web est fourni à titre informatif seulement et ne constitue pas un conseil en placement, en fiscalité ou en finances.",
+  "Cookie consent":"Consentement aux témoins", "Manage cookies":"Gérer les témoins", "Decline all":"Tout refuser", "Accept all":"Tout accepter",
+  "Privacy choices":"Choix de confidentialité", "Close cookie preferences":"Fermer les préférences relatives aux témoins", "Save choices":"Enregistrer les choix",
+  "Essential":"Essentiels", "Analytics":"Analyse", "Customization":"Personnalisation",
+  "Required for basic navigation, security and preferences.":"Nécessaires à la navigation de base, à la sécurité et aux préférences.",
+  "Helps us understand site usage and improve the experience.":"Nous aide à comprendre l'utilisation du site et à améliorer l'expérience.",
+  "Remembers optional preferences that personalize your visit.":"Mémorise les préférences facultatives qui personnalisent votre visite.",
+  "Choose which optional cookies and similar technologies you allow. Essential cookies remain active because they support core site functions.":"Choisissez les témoins facultatifs et les technologies similaires que vous autorisez. Les témoins essentiels restent actifs, car ils permettent le fonctionnement de base du site.",
+  "Select “Accept all” to agree to our use of cookies and similar technologies to enhance your browsing experience, security, analytics and customization. Select “Manage cookies” to make more choices or opt out.":"Sélectionnez « Tout accepter » pour autoriser l'utilisation de témoins et de technologies similaires afin d'améliorer votre expérience de navigation, la sécurité, l'analyse et la personnalisation. Sélectionnez « Gérer les témoins » pour préciser vos choix ou refuser les témoins facultatifs.",
+  "Please complete the security check.":"Veuillez effectuer la vérification de sécurité.", "Sending...":"Envoi en cours...", "Thanks. We'll be in touch soon.":"Merci. Nous communiquerons bientôt avec vous.",
+  "Unable to send your message.":"Impossible d'envoyer votre message.", "Please complete the required fields.":"Veuillez remplir les champs obligatoires.",
+  "Please enter a valid email address.":"Veuillez saisir une adresse courriel valide.", "Please shorten your message.":"Veuillez raccourcir votre message.",
+  "Please complete the security check again.":"Veuillez refaire la vérification de sécurité.",
+  "The contact form is not configured yet.":"Le formulaire de contact n'est pas encore configuré.",
+  "We could not deliver your message. Please email contact@ocreefg.com.":"Nous n'avons pas pu envoyer votre message. Veuillez écrire à contact@ocreefg.com."
+});
+
+Object.assign(fr, {
+  "Platform | Ocree":"Plateforme | Ocree", "Asset owners | Ocree":"Propriétaires d'actifs | Ocree",
+  "Dealers and advisors | Ocree":"Courtiers et conseillers | Ocree", "Investors | Ocree":"Investisseurs | Ocree",
+  "Resources | Ocree":"Ressources | Ocree", "Ocree Capital receives regulatory approval | Ocree":"Ocree Capital obtient l'approbation réglementaire | Ocree",
+  "Winnipeg, Manitoba":"Winnipeg (Manitoba)", "Waterloo, Ontario":"Waterloo (Ontario)",
+  "Ted Davis is the Co-Founder and CEO of Ocree, a digital infrastructure platform helping modernize private markets. After more than 20 years spanning commercial real estate, capital markets, and entrepreneurship, Ted saw firsthand how outdated processes create friction for investors, issuers, and advisors.":"Ted Davis est cofondateur et chef de la direction d'Ocree, une plateforme d'infrastructure numérique qui contribue à moderniser les marchés privés. Fort de plus de 20 ans d'expérience en immobilier commercial, sur les marchés financiers et en entrepreneuriat, il a constaté directement les obstacles que les processus désuets créent pour les investisseurs, les émetteurs et les conseillers.",
+  "Driven by a passion for innovation and market accessibility, he co-founded Ocree to help bridge traditional finance and emerging technology, building infrastructure that makes private markets more efficient, transparent and consistent.":"Animé par l'innovation et l'accessibilité des marchés, il a cofondé Ocree pour rapprocher la finance traditionnelle des technologies émergentes et bâtir une infrastructure qui rend les marchés privés plus efficaces, transparents et uniformes.",
+  "Having participated in more than $5 billion of commercial real estate transactions, Ted is focused on creating a future where investing in private assets is as seamless and accessible as investing in public markets, while maintaining a strong compliance-first foundation.":"Après avoir participé à des opérations immobilières commerciales totalisant plus de 5 milliards de dollars, Ted travaille à rendre l'investissement dans les actifs privés aussi simple et accessible que dans les marchés publics, tout en maintenant une solide base de conformité.",
+  "\"I believe private markets are entering a digital evolution. Ocree's mission is to provide the infrastructure that helps unlock greater access, efficiency and confidence across the entire investment ecosystem.\"":"« Je crois que les marchés privés entrent dans une ère numérique. La mission d'Ocree est de fournir l'infrastructure qui favorise un meilleur accès, une plus grande efficacité et une confiance accrue dans l'ensemble de l'écosystème d'investissement. »",
+  "Ryan Wilkinson is a Co-Founder of Ocree and President of Ocree Properties, bringing over 20 years of experience in commercial real estate, investment analysis, transaction structuring, and business development across North American and international markets. Ryan has extensive experience in asset evaluation, due diligence, market intelligence, risk assessment, and value creation.":"Ryan Wilkinson est cofondateur d'Ocree et président d'Ocree Properties. Il possède plus de 20 ans d'expérience en immobilier commercial, en analyse de placements, en structuration d'opérations et en développement des affaires sur les marchés nord-américains et internationaux. Il possède une vaste expérience en évaluation d'actifs, en diligence raisonnable, en analyse de marché, en évaluation des risques et en création de valeur.",
+  "As President of Ocree Properties, Ryan leads the company's real estate strategy, including asset origination, investment evaluation, strategic partnerships, and identifying opportunities across private real estate markets.":"À titre de président d'Ocree Properties, Ryan dirige la stratégie immobilière de l'entreprise, notamment la recherche d'actifs, l'évaluation des placements, les partenariats stratégiques et le repérage d'occasions sur les marchés immobiliers privés.",
+  "Ryan is focused on combining institutional real estate expertise with modernizing the financial infrastructure to create greater access, transparency, efficiency, and confidence across private markets.":"Ryan cherche à conjuguer l'expertise immobilière institutionnelle et la modernisation de l'infrastructure financière afin d'améliorer l'accès, la transparence, l'efficacité et la confiance sur les marchés privés.",
+  "\"Private markets represent an enormous opportunity. By combining deep real estate expertise with modern financial infrastructure, we can create a more transparent, efficient, and accessible investment ecosystem.\"":"« Les marchés privés offrent un potentiel immense. En réunissant une solide expertise immobilière et une infrastructure financière moderne, nous pouvons créer un écosystème d'investissement plus transparent, efficace et accessible. »",
+  "Anne is the Chief Legal Officer of Ocree and brings over 25 years of experience in the financial markets in legal and accounting. Anne brings a unique perspective as a former regulator, auditor, and lawyer, with experience in senior roles across the financial industry.":"Anne est cheffe des affaires juridiques d'Ocree et possède plus de 25 ans d'expérience dans les marchés financiers, en droit et en comptabilité. Ancienne responsable de la réglementation, auditrice et avocate, elle apporte une perspective unique, acquise dans des postes de direction du secteur financier.",
+  "Anne works closely with regulators and industry to advocate for modernizing regulations to support innovation and confidence in the capital markets, while maintaining investor protection.":"Anne travaille en étroite collaboration avec les organismes de réglementation et l'industrie pour promouvoir une réglementation modernisée qui favorise l'innovation et la confiance dans les marchés financiers tout en protégeant les investisseurs.",
+  "Anne is focused on legal, compliance, regulatory, and operations within Ocree to execute the vision of modernizing the infrastructure for private markets.":"Chez Ocree, Anne se concentre sur les questions juridiques, la conformité, la réglementation et les opérations afin de concrétiser la vision d'une infrastructure modernisée pour les marchés privés.",
+  "Anne is a member of the CSC Fintech Advisory Forum.":"Anne est membre du forum consultatif sur les technologies financières de la CSC."
+});
+
 let currentLanguage = 'en';
-const textNodes = [];
-const attributes = [];
-const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
-  acceptNode(node) {
-    if (!node.nodeValue.trim() || node.parentElement?.closest('script,style,.language-switcher')) return NodeFilter.FILTER_REJECT;
-    return NodeFilter.FILTER_ACCEPT;
-  }
-});
-while (walker.nextNode()) {
-  const node = walker.currentNode;
-  node.__ocreeEnglish = node.nodeValue;
-  textNodes.push(node);
-}
-document.querySelectorAll('[aria-label],[title],[data-label],[placeholder]').forEach((element) => {
-  ['aria-label','title','data-label','placeholder'].forEach((name) => {
-    if (element.hasAttribute(name)) attributes.push({ element, name, value: element.getAttribute(name) });
-  });
-});
+const originalAttributes = new WeakMap();
 const englishTitle = document.title;
 const description = document.querySelector('meta[name="description"]');
 const englishDescription = description?.content || '';
 const translate = (value, language) => language === 'fr' ? fr[value] || value : value;
+window.ocreeTranslate = (value) => translate(value, currentLanguage);
+
+function translatePageContent(root = document.body) {
+  const translateNode = (node) => {
+    if (!node.nodeValue.trim() || node.parentElement?.closest('script,style,.language-switcher')) return;
+    if (node.__ocreeEnglish === undefined) node.__ocreeEnglish = node.nodeValue;
+    const match = node.__ocreeEnglish.match(/^(\s*)(.*?)(\s*)$/s);
+    if (!match) return;
+    const next = match[1] + translate(match[2], currentLanguage) + match[3];
+    if (node.nodeValue !== next) node.nodeValue = next;
+  };
+  if (root.nodeType === Node.TEXT_NODE) translateNode(root);
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+    acceptNode(node) {
+      if (!node.nodeValue.trim() || node.parentElement?.closest('script,style,.language-switcher')) return NodeFilter.FILTER_REJECT;
+      return NodeFilter.FILTER_ACCEPT;
+    }
+  });
+  while (walker.nextNode()) translateNode(walker.currentNode);
+  const selector = '[aria-label],[title],[data-label],[placeholder],[alt]';
+  const elements = root.nodeType === Node.ELEMENT_NODE
+    ? [...(root.matches(selector) ? [root] : []), ...root.querySelectorAll(selector)]
+    : [];
+  elements.forEach((element) => {
+    if (element.closest('.language-switcher')) return;
+    let originals = originalAttributes.get(element);
+    if (!originals) {
+      originals = {};
+      originalAttributes.set(element, originals);
+    }
+    ['aria-label','title','data-label','placeholder','alt'].forEach((name) => {
+      if (!element.hasAttribute(name)) return;
+      if (!(name in originals)) originals[name] = element.getAttribute(name);
+      const next = translate(originals[name], currentLanguage);
+      if (element.getAttribute(name) !== next) element.setAttribute(name, next);
+    });
+  });
+}
+window.ocreeRefreshTranslations = translatePageContent;
 
 const switcher = document.createElement('div');
 switcher.className = 'language-switcher';
@@ -156,15 +266,10 @@ function applyLanguage(language) {
   currentLanguage = language === 'fr' ? 'fr' : 'en';
   window.ocreeLanguage = currentLanguage;
   document.documentElement.lang = currentLanguage;
-  textNodes.forEach((node) => {
-    const original = node.__ocreeEnglish;
-    const match = original.match(/^(\s*)(.*?)(\s*)$/s);
-    if (match) node.nodeValue = match[1] + translate(match[2], currentLanguage) + match[3];
-  });
-  attributes.forEach(({ element, name, value }) => element.setAttribute(name, translate(value, currentLanguage)));
+  translatePageContent();
   document.title = translate(englishTitle, currentLanguage);
   if (description) description.content = translate(englishDescription, currentLanguage);
-  activeCode.textContent = currentLanguage.toUpperCase();
+  if (activeCode.textContent !== currentLanguage.toUpperCase()) activeCode.textContent = currentLanguage.toUpperCase();
   trigger.setAttribute('aria-label', currentLanguage === 'fr' ? 'Choisir la langue' : 'Choose language');
   menu.querySelectorAll('[data-language]').forEach((option) => {
     const active = option.dataset.language === currentLanguage;
@@ -173,6 +278,7 @@ function applyLanguage(language) {
   });
   try { localStorage.setItem('ocree-language', currentLanguage); } catch {}
   setMenu(false);
+  window.dispatchEvent(new CustomEvent('ocree:languagechange', {detail: {language: currentLanguage}}));
 }
 
 trigger.addEventListener('click', () => setMenu(menu.hidden));
@@ -182,10 +288,10 @@ document.querySelector('.menu-toggle')?.addEventListener('click', (event) => {
   const open = event.currentTarget.getAttribute('aria-expanded') === 'true';
   event.currentTarget.setAttribute('aria-label', translate(open ? 'Close menu' : 'Open menu', currentLanguage));
 });
-document.querySelector('[data-contact-form]')?.addEventListener('submit', () => {
-  if (currentLanguage === 'fr') document.querySelector('.form-status').textContent = 'Merci. Nous communiquerons bientôt avec vous.';
-});
-
 let savedLanguage = 'en';
 try { savedLanguage = localStorage.getItem('ocree-language') || 'en'; } catch {}
 applyLanguage(savedLanguage);
+const translationObserver = new MutationObserver((records) => {
+  records.forEach((record) => record.addedNodes.forEach((node) => translatePageContent(node)));
+});
+translationObserver.observe(document.body, {childList: true, subtree: true});
