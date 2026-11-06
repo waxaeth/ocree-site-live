@@ -44,7 +44,7 @@ async function loadSanityResources() {
     const payload = await response.json()
     const articles = payload.result || []
     if (!articles.length) return
-    const staticCards = [...grid.children].slice(3)
+    const staticCards = [...grid.children].slice(3).filter((card) => !card.dataset.sanityFallback)
     grid.replaceChildren(...articles.map(renderArticleCard), ...staticCards)
   } catch (error) {
     console.warn('Sanity resources unavailable; retaining static resource cards.', error)

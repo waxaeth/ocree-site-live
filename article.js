@@ -19,6 +19,40 @@ function renderPortableText(body, target) {
       target.append(figure)
       return
     }
+    if (block._type === 'articleTable') {
+      const wrap = document.createElement('div')
+      wrap.className = 'article-table-wrap'
+      const table = document.createElement('table')
+      const head = document.createElement('thead')
+      const headRow = document.createElement('tr')
+      ;(block.columns || []).forEach((column) => {
+        const cell = document.createElement('th')
+        cell.textContent = column
+        headRow.append(cell)
+      })
+      head.append(headRow)
+      table.append(head)
+      const tableBody = document.createElement('tbody')
+      ;(block.rows || []).forEach((entry) => {
+        const row = document.createElement('tr')
+        ;(entry.cells || []).forEach((value) => {
+          const cell = document.createElement('td')
+          cell.textContent = value
+          row.append(cell)
+        })
+        tableBody.append(row)
+      })
+      table.append(tableBody)
+      wrap.append(table)
+      if (block.note) {
+        const note = document.createElement('p')
+        note.className = 'article-table-note'
+        note.textContent = block.note
+        wrap.append(note)
+      }
+      target.append(wrap)
+      return
+    }
     if (block._type !== 'block') return
     const element = document.createElement(block.style === 'h2' ? 'h2' : block.style === 'blockquote' ? 'blockquote' : 'p')
     element.textContent = articleText(block)
@@ -34,8 +68,12 @@ async function loadSanityArticle() {
   try {
     const response = await fetch(url)
     if (!response.ok) throw new Error(`Sanity article request failed: ${response.status}`)
-    const article = (await response.json()).result
-    if (!article) return
+    let article = (await response.json()).result
+    if (!article) {
+      const fallback = await fetch(`assets/${encodeURIComponent(slug)}.json`)
+      if (!fallback.ok) return
+      article = await fallback.json()
+    }
     document.title = `${article.title} | Ocree`
     page.querySelector('.article-title').textContent = article.title
     page.querySelector('.article-dek').textContent = article.excerpt || ''
