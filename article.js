@@ -66,22 +66,34 @@ async function loadSanityArticle() {
   if (!slug || !page) return
   const url = `https://${ARTICLE_PROJECT_ID}.api.sanity.io/v${ARTICLE_API_VERSION}/data/query/${ARTICLE_DATASET}?query=${ARTICLE_QUERY}&$slug=${encodeURIComponent(JSON.stringify(slug))}`
   try {
-    const response = await fetch(url)
-    if (!response.ok) throw new Error(`Sanity article request failed: ${response.status}`)
-    let article = (await response.json()).result
+    let article
+    try {
+      const response = await fetch(url)
+      if (!response.ok) throw new Error(`Sanity article request failed: ${response.status}`)
+      article = (await response.json()).result
+    } catch (error) {
+      console.warn('Sanity article unavailable; loading local article.', error)
+    }
     if (!article) {
       const fallback = await fetch(`assets/${encodeURIComponent(slug)}.json`)
-      if (!fallback.ok) return
+      if (!fallback.ok) throw new Error(`Article not found: ${slug}`)
       article = await fallback.json()
     }
     document.title = `${article.title} | Ocree`
     page.querySelector('.article-title').textContent = article.title
     page.querySelector('.article-dek').textContent = article.excerpt || ''
-    page.querySelector('.article-meta span:last-child').textContent = new Intl.DateTimeFormat('en-CA', {year: 'numeric', month: 'long', day: 'numeric'}).format(new Date(article.publishedAt))
+    const published = new Intl.DateTimeFormat('en-CA', {year: 'numeric', month: 'long', day: 'numeric'}).format(new Date(article.publishedAt))
+    page.querySelector('.article-meta span:nth-child(2)').textContent = 'Article'
+    page.querySelector('.article-meta span:last-child').textContent = published
+    const details = page.querySelectorAll('.article-aside dd')
+    if (details[1]) details[1].textContent = published
+    if (details[2]) details[2].textContent = 'Private market infrastructure'
+    const placeholder = page.querySelector('.article-image-placeholder')
     if (article.heroImage?.url) {
-      const placeholder = page.querySelector('.article-image-placeholder')
       placeholder.replaceChildren(Object.assign(document.createElement('img'), {src: article.heroImage.url, alt: article.title}))
       placeholder.classList.add('has-image')
+    } else {
+      placeholder.remove()
     }
     renderPortableText(article.body || [], page.querySelector('.article-body'))
   } catch (error) {
