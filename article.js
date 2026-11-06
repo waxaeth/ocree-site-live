@@ -75,7 +75,7 @@ async function loadSanityArticle() {
       console.warn('Sanity article unavailable; loading local article.', error)
     }
     if (!article) {
-      const fallback = await fetch(`assets/${encodeURIComponent(slug)}.json`)
+      const fallback = await fetch(`assets/${encodeURIComponent(slug)}.json?v=2`)
       if (!fallback.ok) throw new Error(`Article not found: ${slug}`)
       article = await fallback.json()
     }
